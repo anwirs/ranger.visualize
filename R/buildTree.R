@@ -1,5 +1,5 @@
 
-buildTree <- function(rForrest,nthTree){
+buildTree <- function(rForrest,nthTree=1){
   # Initialize the root of the tree
   tree_data = ranger::treeInfo(rForrest,tree=nthTree)
 
