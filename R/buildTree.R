@@ -1,9 +1,13 @@
-library(data.tree)
+
+
+
 buildTree <- function(rForrest,nthTree=1){
+
+
   # Initialize the root of the tree
   tree_data = ranger::treeInfo(rForrest,tree=nthTree)
 
-  tree <- Node$new(paste("tree",nthTree,sep=""))
+  tree <- data.tree::Node$new(paste("tree",nthTree,sep=""))
 
 
   # Function to recursively add nodes to the tree

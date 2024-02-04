@@ -10,7 +10,7 @@ devtools::install_github("anwirs/ranger.visualize",force = TRUE)
 
 
 tree <- ranger.visualize::buildTree(rForest,1)
-tree
-tree |> renderTree()
+tree |> head()
+#tree |> renderTree()
 rForest |> canopy()
 
