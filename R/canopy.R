@@ -48,4 +48,4 @@ canopy <- function(rForest){
 
   return(frequency_table)
 }
-canopy(rForest )
+#canopy(rForest )

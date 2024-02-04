@@ -1,10 +1,3 @@
-# Function to recursively add nodes to the tree
-
-
-tree_data = ranger::treeInfo(forest,tree=1)
-tree_data
-
-
 
 buildTree <- function(rForrest,nthTree){
   # Initialize the root of the tree

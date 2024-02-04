@@ -30,6 +30,7 @@ data(iris)
 iris
 
 forest <- ranger::ranger("Species ~ .",data=iris)
+rForest <- forest
 forest |> summary()
 
 
