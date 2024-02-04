@@ -19,10 +19,22 @@ install.packages("devtools")
 install.packages("roxygen2")
 #devtools::create("ranger.visualize")
 
-treeToText <- function() {
-  print("Hello, world!")
-}
 
-treeToGraph <- function() {
-  print("Hello, world!")
-}
+
+library(data.tree)
+library(DiagrammeR)
+
+
+library(datasets)
+data(iris)
+iris
+
+forest <- ranger::ranger("Species ~ .",data=iris)
+forest |> summary()
+
+
+
+forest |> ranger::treeInfo()
+
+source("./R/buildTree.R")
+buildTree(rForrest=forest,nthTree = 1)
