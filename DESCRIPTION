@@ -1,0 +1,10 @@
+Package: ranger.visualize
+Type: Package
+Title: Visualize Random Forest created with the ranger package
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: Anton Wirsing <git@wirsing.io>
+Description: Visualize Random Forest created with the ranger package
+License: GNU v3
+Encoding: UTF-8
+LazyData: true
